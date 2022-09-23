@@ -1,6 +1,8 @@
 <template>
     <div class="card" style="width: 18rem;">
-        <img v-bind:src="url" class="card-img-top">
+        <Img>
+            <img v-bind:src="url" class="card-img-top">
+        </Img>
         <div class="card-body">
             <h5 class="card-title">{{nombre}}</h5>
             <p class="card-text">{{descripcion}}</p>
@@ -33,5 +35,6 @@ import Img from "./Img.vue";
 <style scoped>
     div{
         text-align: center;
+        border-radius:5%;
     }
 </style>
